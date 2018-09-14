@@ -16,7 +16,6 @@ class SwiftMovieTableViewCell: UITableViewCell {
     
     @objc var movie: CRAMovie?{
         didSet{
-            //can't get load view if needed working
             updateViews()
         }
     }
@@ -29,5 +28,3 @@ class SwiftMovieTableViewCell: UITableViewCell {
         summaryLabel.text = movie.summary
     }
 }
-
-
